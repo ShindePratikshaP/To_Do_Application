@@ -4,6 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do App</title>
+    <style>
+        body{
+            background-color: #176797;
+            background-image: linear-gradient(160deg, #176797 0%, #18ceb9 100%);
+            height: 100vh;
+
+        }
+        .action-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            font-size: 10px;
+        }
+        .list-container{
+            height: 300px;
+            background-color:white;
+            width: 300px;
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 5px;
+        overflow-y: scroll;
+     
+
+        }
+        .todo-item{
+            background-color: #054464;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+            color: white;
+        }
+        .input{
+            width: 200px;
+            padding: 5px 5px;
+            font-size: 15px;
+        }
+        .btn-add{
+            padding: 5px auto;
+            font-size: 15px;
+            margin-left: 5px;
+            padding: 5px;
+            
+        }
+    </style>
 </head>
 <body>
     <div class="list-container" id="list-container">
@@ -12,7 +57,7 @@
 
    
     <div class="action-container">
-        <input type="text" id="input-todo"/>
+        <input type="text" id="input-todo" class="input" placeholder="Enter List Item"/>
     <button class="btn-add" onclick="Add()">Add</button>
     </div>
     
